@@ -4,11 +4,11 @@ class Solution {
         String str = Integer.toString(x);
         int sum = 0;
         for(int i = 0;i < str.length();i++){
-            sum += Integer.parseInt(String.valueOf(str.charAt(i)));
+            sum += str.charAt(i) - '0';
         }
         if(x % sum == 0)
             answer = true;
-        else 
+        else
             answer = false;
         return answer;
     }
