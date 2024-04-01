@@ -3,15 +3,9 @@ class Solution {
         long result = -1;
         long myMoney = money;
         for (int i = 1;i <= count;i++){
-            myMoney -= price * i;
+            myMoney -= (long) (price * i);
         }
-
-        if(myMoney >= 0)
-            result = 0;
-        else{
-            result = Math.abs(myMoney);
-        }
-
-        return result;
+        
+        return myMoney >= 0? 0 : Math.abs(myMoney);
     }
 }
