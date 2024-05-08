@@ -14,5 +14,6 @@ class Solution {
         else {
             return nums.length / 2;
         }
+        return set.size() <= nums.length ? set.size() : nums.length / 2;
     }
 }
