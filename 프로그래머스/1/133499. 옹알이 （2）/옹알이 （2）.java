@@ -12,8 +12,6 @@ class Solution {
             word = word.replace("ma"," ");
             word = word.replace(" ","");
 
-            System.out.println(word);
-
             if(word.length() == 0)
                 answer++;
         }
