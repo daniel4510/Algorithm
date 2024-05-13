@@ -12,7 +12,7 @@ class Solution {
             word = word.replace("ma"," ");
             word = word.replace(" ","");
 
-            if(word.length() == 0)
+            if(word.isEmpty())
                 answer++;
         }
         return answer;
