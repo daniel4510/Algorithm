@@ -19,16 +19,10 @@ class Solution {
         }
 
         answer = sb.toString();
-        
-        if(answer.length() == 0) {
-            answer = "-1";
-            return answer;
-        }
-        
         if(answer.charAt(0) == '0') {
             answer = "0";
         }
 
-        return answer;
+        return answer.length() == 0? "-1" : answer;
     }
 }
